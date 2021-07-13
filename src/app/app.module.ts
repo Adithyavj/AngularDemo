@@ -3,14 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import { EmployeeComponent } from './employee/employee.component';
+import { DepartmentComponent } from './department/department.component';
+import { ShowEmpComponent } from './employee/show-emp/show-emp.component';
+import { EditEmpComponent } from './employee/edit-emp/edit-emp.component';
+import { AddEmpComponent } from './employee/add-emp/add-emp.component';
+import { ShowDepComponent } from './department/show-dep/show-dep.component';
+import { EditDepComponent } from './department/edit-dep/edit-dep.component';
+import { AddDepComponent } from './department/add-dep/add-dep.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeeComponent,
+    DepartmentComponent,
+    ShowEmpComponent,
+    EditEmpComponent,
+    AddEmpComponent,
+    ShowDepComponent,
+    EditDepComponent,
+    AddDepComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
